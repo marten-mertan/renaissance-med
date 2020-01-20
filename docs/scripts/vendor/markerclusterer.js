@@ -184,7 +184,7 @@ function MarkerClusterer(map, opt_markers, opt_options) {
  */
 
 
-MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = '../../assets/img/m';
+MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = '../assets/img/m';
 /**
  * The marker cluster image path.
  *
