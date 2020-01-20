@@ -106,7 +106,7 @@ window.onload = function(){
         return points;
     };
     var map;
-    var markerImage = "../assets/img/m0.png";
+    var markerImage = "assets/img/m0.png";
     var infoWindows = [];
     function initialize(){
        var center = new google.maps.LatLng(55.75370903771494, 37.61981338262558);
