@@ -1,0 +1,330 @@
+.dealer-map-title {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding-top: 52px; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-title {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column;
+      padding-top: 27px; } }
+  .dealer-map-title-switch {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-align: center;
+            align-items: center; }
+    @media screen and (max-width: 1199px) {
+      .dealer-map-title-switch {
+        margin: 12px 0; } }
+    .dealer-map-title-switch__input {
+      position: relative;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+              flex-direction: row;
+      margin: 0;
+      cursor: pointer; }
+      .dealer-map-title-switch__input input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+      .dealer-map-title-switch__input input + .dealer-map-title-switch__text {
+        opacity: 1; }
+        .dealer-map-title-switch__input input + .dealer-map-title-switch__text + .dealer-map-title-switch__slider:before {
+          -webkit-transform: translateX(0px);
+                  transform: translateX(0px); }
+        .dealer-map-title-switch__input input + .dealer-map-title-switch__text + .dealer-map-title-switch__slider + .dealer-map-title-switch__text {
+          opacity: 0.6; }
+      .dealer-map-title-switch__input input:checked + .dealer-map-title-switch__text {
+        opacity: 0.6; }
+        .dealer-map-title-switch__input input:checked + .dealer-map-title-switch__text + .dealer-map-title-switch__slider:before {
+          -webkit-transform: translateX(22px);
+                  transform: translateX(22px); }
+        .dealer-map-title-switch__input input:checked + .dealer-map-title-switch__text + .dealer-map-title-switch__slider + .dealer-map-title-switch__text {
+          opacity: 1; }
+    .dealer-map-title-switch__slider {
+      position: relative;
+      display: block;
+      border: 1px solid #a9a9a9;
+      border-radius: 14px;
+      background-color: white;
+      margin: 0 12px;
+      width: 48px;
+      height: 26px;
+      -webkit-transition: .4s;
+      transition: .4s; }
+      .dealer-map-title-switch__slider:before {
+        position: absolute;
+        content: "";
+        height: 12px;
+        width: 12px;
+        left: 6px;
+        bottom: 6px;
+        background-color: black;
+        border-radius: 50%;
+        -webkit-transition: .4s;
+        transition: .4s; }
+    .dealer-map-title-switch__text {
+      font-family: "Garamond Regular";
+      font-size: 18px;
+      line-height: 26px;
+      color: #313131;
+      opacity: 0.6;
+      -webkit-transition: opacity .4s;
+      transition: opacity .4s; }
+
+.dealer-map-text {
+  font-family: "Garamond Regular";
+  font-size: 20px;
+  color: #313131;
+  margin-bottom: 22px; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-text {
+      font-size: 18px;
+      margin-bottom: 20px; } }
+
+.dealer-map-search {
+  background-color: #f8f8f8;
+  padding-top: 18px;
+  padding-bottom: 24px; }
+  .dealer-map-search__form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    @media screen and (max-width: 919px) {
+      .dealer-map-search__form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column; } }
+  .dealer-map-search__btn {
+    position: relative;
+    min-width: 228px;
+    height: 42px;
+    font-size: 17px;
+    line-height: 14px;
+    font-family: "Garamond Regular";
+    color: white;
+    text-align: left;
+    padding: 4px 22px 8px 50px;
+    margin-right: 44px;
+    background-color: #9ebb00;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.21);
+    -webkit-transition: box-shadow 0.6s;
+    transition: box-shadow 0.6s; }
+    @media screen and (max-width: 919px) {
+      .dealer-map-search__btn {
+        margin: 0 0 14px 0;
+        width: 100%; } }
+    .dealer-map-search__btn:hover {
+      box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.21), inset 0 -2px 0 0 #708118;
+      -webkit-transition: box-shadow 0.3s;
+      transition: box-shadow 0.3s; }
+    .dealer-map-search__btn:after {
+      content: url("../assets/img/target.png");
+      position: absolute;
+      left: 15px;
+      top: 10px; }
+  .dealer-map-search__input {
+    margin: 0 44px 0 0;
+    outline: none;
+    padding: 10px 24px;
+    width: 50%;
+    border-radius: 20px;
+    font-family: 'TTNorms Light';
+    font-size: 15px;
+    line-height: 20px;
+    -webkit-appearance: none;
+    border: 1px solid #a9a9a9;
+    height: 42px; }
+    @media screen and (max-width: 919px) {
+      .dealer-map-search__input {
+        margin: 0 0 14px 0;
+        width: 100%; } }
+  .dealer-map-search__select {
+    width: 50%;
+    margin: 0;
+    cursor: pointer; }
+    @media screen and (max-width: 919px) {
+      .dealer-map-search__select {
+        margin: 0;
+        width: 100%; } }
+    .dealer-map-search__select select {
+      width: 100%;
+      padding: 10px 24px;
+      cursor: pointer;
+      margin: 0;
+      background-color: white; }
+
+.dealer-map-google {
+  width: 100%;
+  height: 0;
+  padding-top: 40%; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-google {
+      padding-top: 680px; } }
+
+.dealer-map-list a {
+  color: #2e699b;
+  text-decoration: underline; }
+  .dealer-map-list a:hover {
+    color: #e93f70; }
+
+.dealer-map-list p {
+  margin: 0; }
+
+.dealer-map-list__title {
+  padding: 22px 0;
+  font-family: "Garamond";
+  font-size: 16px;
+  color: #676767;
+  border-bottom: 1px solid #e3e3e3; }
+
+.dealer-map-list__body {
+  margin-bottom: 70px; }
+
+.dealer-map-list__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 24px 0;
+  border-bottom: 1px solid #e3e3e3; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-list__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+              flex-direction: column; } }
+
+.dealer-map-list__column {
+  width: 50%; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-list__column {
+      width: 100%; } }
+
+.dealer-map-list__name {
+  font-family: "TTNorms Regular";
+  font-size: 21px;
+  line-height: 1;
+  color: #323232;
+  text-transform: uppercase;
+  margin-bottom: 12px; }
+
+@media screen and (max-width: 1199px) {
+  .dealer-map-list__logo {
+    margin-bottom: 18px; } }
+
+.dealer-map-list__address {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  font-family: "Garamond";
+  font-size: 18px;
+  line-height: 31px;
+  color: #626262; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-list__address {
+      line-height: 1;
+      margin-bottom: 12px; } }
+
+.dealer-map-list__phone {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  font-family: "Garamond";
+  font-size: 18px;
+  line-height: 31px;
+  color: #626262; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-list__phone {
+      line-height: 1;
+      margin-bottom: 12px; } }
+
+.dealer-map-list__site {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  font-family: "Garamond";
+  font-size: 18px;
+  line-height: 31px;
+  color: #626262;
+  margin-bottom: 12px; }
+  @media screen and (max-width: 1199px) {
+    .dealer-map-list__site {
+      line-height: 1;
+      margin-bottom: 12px; } }
+
+.dealer-map-list-tags {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap; }
+  .dealer-map-list-tags__item {
+    font-family: "Garamond";
+    font-size: 15px;
+    line-height: 1;
+    color: #626262;
+    padding: 8px 19px;
+    border-radius: 14px;
+    background-color: #f1f1f1;
+    margin-right: 6px;
+    margin-top: 6px; }
+  .dealer-map-list-tags__img {
+    margin-right: 6px; }
+
+.dealer-map-list__icon {
+  margin-right: 12px; }
+
+@media screen and (max-width: 479px) {
+  .dealer-map .defaultcont {
+    padding: 0 15px; } }
+
+.card-map {
+  max-width: 430px;
+  font-family: "Garamond";
+  font-size: 16px;
+  color: #626262;
+  padding: 8px; }
+  .card-map a {
+    color: #626262; }
+  .card-map-name {
+    font-family: "TTNorms Regular";
+    font-size: 18px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+
+.gm-ui-hover-effect {
+  top: 0 !important;
+  right: 0 !important; }
+
+@media screen and (max-width: 1199px) {
+  .gm-style-iw {
+    max-width: 280px !important; } }
+
+@media screen and (max-width: 1199px) {
+  .gm-style-iw-d {
+    max-width: 280px !important; } }
