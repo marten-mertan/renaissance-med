@@ -13,7 +13,7 @@
         <div class="defaultcont">
             <form action="#" class="catalog-search__form">
                 <a class="catalog-search__all" href="">
-                    <div class="catalog-search__btn active">
+                    <div class="catalog-search__btn js-catalog-btn active">
                         <div class="catalog-search__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Слой_1" x="0" y="0" viewBox="0 0 500.05 512" xml:space="preserve">
                                 <style>.st0{clip-path:url(#SVGID_2_)}</style>
@@ -50,7 +50,7 @@
                         <option value="5">Иммунитет</option>
                         <option value="6">Послабляющие и очищение организма</option>
                         <option value="7">Для похудения и очищения организма</option>
-                        <option value="8" selected>Для поддержки печени</option>
+                        <option value="8">Для поддержки печени</option>
                         <option value="9">При планировании беременности</option>
                         <option value="10">Для почек и мочевыводящих путей</option>
                         <option value="11">ANTI-AGE</option>
@@ -341,6 +341,7 @@
                     s.selectedIndex = i;
                     h.innerHTML = this.innerHTML;
                     y = this.parentNode.getElementsByClassName("same-as-selected");
+                    document.getElementsByClassName("js-catalog-btn")[0].classList.remove("active");
                     for (k = 0; k < y.length; k++) {
                     y[k].removeAttribute("class");
                     }
@@ -379,6 +380,14 @@
         }
         }
 
+        function catalogButton(){
+            document.getElementsByClassName("select-selected")[0].innerHTML = "Назначение препарата";
+            document.getElementsByClassName("js-catalog-select")[0].getElementsByTagName("select")[0].selectedIndex = 0;
+            document.getElementsByClassName("same-as-selected")[0].removeAttribute("class");
+            document.getElementsByClassName("js-catalog-btn")[0].classList.add("active");
+        }
+
+        document.getElementsByClassName("js-catalog-btn")[0].addEventListener("click", catalogButton);
         document.addEventListener("click", closeAllSelect);
     });
 </script>

@@ -27,7 +27,10 @@
     -webkit-box-direction: normal;
             flex-direction: row;
     -webkit-box-align: center;
-            align-items: center; }
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
     @media screen and (max-width: 767px) {
       .catalog-search__btn {
         margin-bottom: 10px; } }
