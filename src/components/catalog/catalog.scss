@@ -221,7 +221,7 @@
                 }
             }
             &__circle{
-                width: 400px;
+                width: calc(100% + 133px);
                 height: 400px;
                 position: absolute;
                 top: -240px;

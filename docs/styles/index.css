@@ -216,7 +216,7 @@
       .catalog-body-card:not(:nth-child(2n)) {
         margin-right: 27px; } }
     .catalog-body-card__circle {
-      width: 400px;
+      width: calc(100% + 133px);
       height: 400px;
       position: absolute;
       top: -240px;
