@@ -560,7 +560,7 @@ jQuery(function($) {
             var $menuItem = $('.js-hover');
             var $back = $('.js-subback');
             $menuItem.on('mouseover', function() {
-                $back.css({'opacity': 1, 'height': '67px'});
+                $back.css({'opacity': 1, 'height': this.querySelector('.sbmenu__subitem').offsetHeight+20 || '67px'});
             });
             $menuItem.on('mouseout', function() {
                 $back.css({'opacity': 0, 'height': 0});
