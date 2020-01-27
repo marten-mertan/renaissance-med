@@ -172,12 +172,13 @@
             }
         }
     }
-    &-google{
-        width: 100%;
-        height: 0;
-        padding-top: 40%;
+    &-yandex{
+        width: 100%; 
+        height: 40vw; 
+        padding: 0; 
+        margin: 0;
         @media screen and (max-width: 1199px){
-            padding-top: 680px;
+            height: 680px; 
         }
     }
     &-list{
@@ -321,13 +322,13 @@
     top: 0 !important;
     right: 0 !important;
    }
-.gm-style-iw{
+.ymaps-2-1-75-balloon{
     @media screen and (max-width: 1199px){
-        max-width: 280px !important;
+        width: 260px !important;
     }
-    &-d{
+    &__layout{
         @media screen and (max-width: 1199px){
-            max-width: 280px !important;
+            width: 260px !important;
         }
     }
 }
