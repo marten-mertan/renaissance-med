@@ -596,7 +596,7 @@
   @media screen and (max-width: 1199px) {
     .dealer-map-yandex {
       height: 680px;
-      max-height: 75vh; } }
+      max-height: 80vh; } }
 
 .dealer-map-list a {
   color: #2e699b;
