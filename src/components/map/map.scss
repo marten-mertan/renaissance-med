@@ -179,6 +179,7 @@
         margin: 0;
         @media screen and (max-width: 1199px){
             height: 680px; 
+            max-height: 75vh;
         }
     }
     &-list{
@@ -318,17 +319,3 @@
     }
 }
 
-.gm-ui-hover-effect{
-    top: 0 !important;
-    right: 0 !important;
-   }
-.ymaps-2-1-75-balloon{
-    @media screen and (max-width: 1199px){
-        width: 260px !important;
-    }
-    &__layout{
-        @media screen and (max-width: 1199px){
-            width: 260px !important;
-        }
-    }
-}

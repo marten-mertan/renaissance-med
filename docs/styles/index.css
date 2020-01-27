@@ -595,7 +595,8 @@
   margin: 0; }
   @media screen and (max-width: 1199px) {
     .dealer-map-yandex {
-      height: 680px; } }
+      height: 680px;
+      max-height: 75vh; } }
 
 .dealer-map-list a {
   color: #2e699b;
@@ -734,15 +735,3 @@
     color: #323232;
     text-transform: uppercase;
     margin-bottom: 10px; }
-
-.gm-ui-hover-effect {
-  top: 0 !important;
-  right: 0 !important; }
-
-@media screen and (max-width: 1199px) {
-  .ymaps-2-1-75-balloon {
-    width: 260px !important; } }
-
-@media screen and (max-width: 1199px) {
-  .ymaps-2-1-75-balloon__layout {
-    width: 260px !important; } }
